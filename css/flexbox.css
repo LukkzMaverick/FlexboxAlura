@@ -1,0 +1,102 @@
+
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalhoPrincipal-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list{
+    justify-content: space-evenly;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+.rodapePrincipal-navMap-list{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rodapePrincipal-navMap-list > section{
+    display: flex;
+    flex-direction: column;
+}
+.conteudoPrincipal-cursos{
+    justify-content: stretch;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteudoPrincipal-cursos-link{
+    width:23%;
+}
+.videoSobre .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videoSobre-video{
+    flex-grow: 2;
+    flex-shrink: 4;
+}
+
+.videoSobre-sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 3;
+}
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+@media(max-width: 769px) {
+    .videoSobre-video{
+        margin-bottom: 1em;
+    }
+	.cabecalhoPrincipal > .container{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+    }
+    .cabecalhoPrincipal-nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .conteudoPrincipal-cursos-link{
+        margin-bottom: 4%;
+        width: 100%;
+    }
+    .rodapePrincipal-navMap-list{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .rodapePrincipal-patrocinadores .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .rodapePrincipal-patrocinadores-list{
+        justify-content: space-evenly;
+        width:100%;
+    }        
+    
+    .rodapePrincipal-contatoForm{
+        width: initial;
+    }
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+
+}
